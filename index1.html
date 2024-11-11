@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .a {
+        width: 500px;
+        height: 100px;
+        border: 5px solid rgb(255, 123, 0);
+    }
+
+    @keyframes go-left-right {
+        from {
+            left: 0px;
+        }
+
+        to {
+            left: calc(100% - 100px);
+        }
+    }
+
+    .b {
+        position: relative;
+        animation: go-left-right 3s infinite alternate;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(255, 123, 0);
+    }
+
+    .back-link {
+        margin-top: 50px;
+        display: inline-block;
+        font-family: Arial, sans-serif;
+        font-size: 1.2em;
+        color: rgb(0, 150, 255);
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+        background-color: rgba(0, 150, 255, 0.1);
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .back-link:hover {
+        color: rgb(238, 2, 179);
+        background-color: rgba(238, 2, 179, 0.1);
+        box-shadow: 0 6px 12px rgba(238, 2, 179, 0.3);
+        transform: scale(1.05);
+    }
+
+    @keyframes colorAnim {
+        from {
+            color: rgb(0, 150, 255);
+        }
+
+        to {
+            color: rgb(238, 2, 179);
+        }
+    }
+</style>
+
+<body>
+    <div class="a">
+        <div class="b"></div>
+    </div>
+
+    
+    <center>
+        <a href="menu.html" class="back-link">&lt; Назад</a>
+    </center>
+</body>
+
+</html>
